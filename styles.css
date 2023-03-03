@@ -44,4 +44,13 @@ body {
     min-height: 100vh;
     background-color: var(--almostWhite);
 }
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.nav-options {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
