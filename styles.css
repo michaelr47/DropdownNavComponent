@@ -28,3 +28,20 @@ The designs were created to the following widths:
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --almostWhite: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black:  hsl(0, 0%, 8%)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh;
+    background-color: var(--almostWhite);
+}
+
