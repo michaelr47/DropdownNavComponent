@@ -45,11 +45,21 @@ body {
     background-color: var(--almostWhite);
 }
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-evenly; */
 }
 
-.nav-options {
+.navLeft {
+    width: 30rem;
+
+}
+/* .navRight {
+    width: 25%;
+    
+} */
+
+.nav-items {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
