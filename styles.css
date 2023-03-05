@@ -92,6 +92,12 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--gray);
+}
+a:hover {
+ color: var(--black);   
+}
 
 .registerBtn {
     font-size: 18px;
