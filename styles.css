@@ -54,7 +54,7 @@ body {
 }
 
 .navLeft {
-    width: 33rem;
+    width: 35.5rem;
 
 }
 .navRight {
@@ -70,10 +70,15 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
+    padding: 10px;
     color: var(--gray);
 }
 .nav-items:hover {
     color: var(--black);
+}
+
+.nav-item {
+    margin-left: 2rem;
 }
 
 .loginBtn {
