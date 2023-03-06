@@ -91,7 +91,9 @@ body {
 a {
     text-decoration: none;
 }
-
+a:link {
+    color: var(--gray);
+}
 a:visited {
     color: var(--gray);
 }
@@ -100,7 +102,7 @@ a:hover {
 }
 
 .registerBtn {
-    font-size: 18px;
+    font-size: 1rem;
     width: 6.2rem;
     padding: 9px;
     color: var(--gray);
@@ -112,4 +114,8 @@ a:hover {
     border: 2px solid var(--black);
     color: var(--black);
     cursor: pointer;
+}
+.desktopHero {
+    /* width: 40rem; */
+    height: 30rem;
 }

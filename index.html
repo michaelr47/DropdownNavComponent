@@ -22,15 +22,17 @@
           <li class="nav-item">
             <a href="#">
               Features 
-              <i class="fa-solid fa-angle-down fa-xs"></i>
-              <i class="fa-solid fa-angle-up fa-xs"></i>
+              <!-- <i class="fa-solid fa-angle-down fa-xs"></i> -->
+              <img src="./images/icon-arrow-down.svg" alt="">
+              <!-- <i class="fa-solid fa-angle-up fa-xs"></i> -->
             </a>
           </li>
           <li class="nav-item">
             <a href="#">
               Company
-              <i class="fa-solid fa-angle-down fa-xs"></i>
-              <i class="fa-solid fa-angle-up fa-xs"></i>
+              <img src="./images/icon-arrow-down.svg" alt="">
+              <!-- <i class="fa-solid fa-angle-down fa-xs"></i> -->
+              <!-- <i class="fa-solid fa-angle-up fa-xs"></i> -->
             </a>
           </li>
           <li class="nav-item">
@@ -52,21 +54,29 @@
   </nav>
 
   <section class="container">
-    <header id="main-header">
-      <h1 id="main-text">
-        Make remote work
-      </h1>
-    </header>
-    <div class="about-text">
-      <p>
-        Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
-      </p>
+    <div class="innerLeftCont">
+      <header id="main-header">
+        <h1 id="main-text">
+          Make remote work
+        </h1>
+      </header>
+      <div class="about-text">
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+      </div>
+      <div class="buttonContainer">
+      <button class="btn" id="btn">
+        Learn more
+      </button>
+      </div>
     </div>
-    <div class="buttonContainer">
-     <button class="btn" id="btn">
-      Learn more
-    </button>
+    <div class="innerRightCont">
+      <picture>
+        <source media="(min-width: 576px)" srcset="./images/image-hero-desktop.png">
+        <img class="desktopMobile" src="./images/image-hero-mobile.png" alt="hero image for mobile">
+      </picture>
     </div>
   </section>
   <div class="attribution">
