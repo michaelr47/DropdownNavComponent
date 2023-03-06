@@ -115,7 +115,25 @@ a:hover {
     color: var(--black);
     cursor: pointer;
 }
+
+section {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.innerLeftCont { 
+    width: 40%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.innerRightCont {
+    padding: 1.5rem;
+}
+
 .desktopHero {
-    /* width: 40rem; */
-    height: 30rem;
+    width: 30rem;
+   
 }
