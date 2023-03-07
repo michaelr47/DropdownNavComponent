@@ -150,9 +150,6 @@ section {
     color: var(--gray);
 }
 
-/* .buttonContainer {
-    padding-left: 1rem;
-} */
 .learnMoreBtn {
     font-size: 18px;
     border: none;
@@ -163,4 +160,15 @@ section {
 }
 .learnMoreBtn:hover {
     cursor: pointer;
+}
+
+.testimonialCont {
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-align {
+    display: flex;
+    align-items: center;
+    
 }
