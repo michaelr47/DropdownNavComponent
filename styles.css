@@ -139,5 +139,12 @@ section {
 }
 
 #main-text {
-    font-size: 5.5rem;
+    font-size: 5.2rem;
+    padding: 10px 5px 0px;
+}
+.aboutText {
+    padding: 10px 5px 0px;
+    font-size: 18px;
+    line-height: 28px;;
+    color: var(--gray);
 }
