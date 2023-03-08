@@ -65,6 +65,7 @@ body {
 }
 
 .nav-items { 
+    /* text-align: center; */
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -175,3 +176,8 @@ section {
     align-items: center;
     
 }
+
+.arrowUp {
+    display: none;
+}
+
