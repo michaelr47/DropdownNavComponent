@@ -160,6 +160,9 @@ section {
 }
 .learnMoreBtn:hover {
     cursor: pointer;
+    background-color: transparent;
+    color: var(--black);
+    border: 1.5px solid var(--black);
 }
 
 .testimonialCont {
