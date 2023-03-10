@@ -1,6 +1,13 @@
 const getArrowUpImg = () => {
-    document.querySelectorAll('.arrowDown').src = './images/icon-arrow-up.svg';
+    let img1 = document.querySelectorAll('.arrowDown');
+    for (const images of img1) {
+        images.src = './images/icon-arrow-up.svg';
+    }
 }
+
 const getArrowDownImg = () => {
-    document.querySelectorAll('.arrowDown').src = './images/icon-arrow-down.svg';
+    let img1 = document.querySelectorAll('.arrowDown');
+    for (const images of img1) {
+        images.src = './images/icon-arrow-down.svg';
+    }
 }
