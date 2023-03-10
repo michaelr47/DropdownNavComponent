@@ -65,12 +65,11 @@ body {
 }
 
 .nav-items { 
-    /* text-align: center; */
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
     padding: 10px;
     color: var(--gray);
 }
@@ -177,7 +176,7 @@ section {
     
 }
 
-.arrowUp {
+/* .arrowUp {
     display: none;
-}
+} */
 
