@@ -175,8 +175,9 @@ section {
     align-items: center;
     
 }
-
-/* .arrowUp {
-    display: none;
-} */
+.dropdownFeatures {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
 
