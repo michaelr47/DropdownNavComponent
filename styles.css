@@ -216,3 +216,7 @@ section {
     border-radius: 10px;
     z-index: 1;
 }
+
+.dropdownIcon {
+    margin-right: 5px;
+}
