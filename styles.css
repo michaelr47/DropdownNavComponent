@@ -73,9 +73,6 @@ body {
     padding: 10px;
     color: var(--gray);
 }
-.nav-items:hover {
-    color: var(--black);
-}
 
 .nav-item {
     margin-left: 2rem;
