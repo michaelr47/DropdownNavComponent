@@ -220,3 +220,14 @@ section {
 .dropdownIcon {
     margin-right: 5px;
 }
+
+@media only screen and (max-width: 830px) {
+    section {
+        flex-direction: column;
+        order: -1;
+    }
+    .testimonialCont {
+        flex-wrap: wrap;
+        max-width: 20rem;
+    }
+}
