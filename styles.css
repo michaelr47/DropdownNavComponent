@@ -42,9 +42,11 @@ The designs were created to the following widths:
 
 body { 
     min-height: 100vh;
+    min-width: 100vw;
     background-color: var(--almostWhite);
     font-family: 'Epilogue', sans-serif;
 }
+
 .navbar {
 
     padding: 1.5rem;
@@ -222,9 +224,15 @@ section {
 }
 
 @media only screen and (max-width: 830px) {
+    .innerRightCont {
+        order: -1;
+    }
+    .innerLeftCont {
+        justify-content: center;
+    }
     section {
         flex-direction: column;
-        order: -1;
+    
     }
     .testimonialCont {
         flex-wrap: wrap;
