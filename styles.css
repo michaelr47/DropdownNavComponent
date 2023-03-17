@@ -40,15 +40,18 @@ The designs were created to the following widths:
     box-sizing: border-box;
 }
 
-body { 
-    min-height: 100vh;
-    min-width: 100vw;
+html {
+    min-width: 375px;
+    width: 100%;    
+}
+body {
+    /* min-height: 100vh; */
+    /* width: 100%; */
     background-color: var(--almostWhite);
     font-family: 'Epilogue', sans-serif;
 }
 
 .navbar {
-
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -56,11 +59,10 @@ body {
 }
 
 .navLeft {
-    width: 35.5rem;
-
+    min-width: 35.5rem;
 }
 .navRight {
-    width: 15rem;
+    min-width: 15rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,7 +137,7 @@ section {
 }
 
 .desktopHero {
-    width: 30rem;
+    max-width: 30rem;
    
 }
 
@@ -234,13 +236,15 @@ section {
     .innerLeftCont {
         justify-content: center;
     }
-    section {
+    section{
         flex-direction: column;
-    
+        justify-content: center;
+        max-width: 100vw;
+        /* width: ; */
     }
     .testimonialCont {
         flex-wrap: wrap;
-        max-width: 20rem;
+        min-width: 20rem;
     }
 
     .nav-item{ 
