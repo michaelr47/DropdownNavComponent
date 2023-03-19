@@ -138,7 +138,8 @@ section {
 }
 
 .desktopHero {
-    max-width: 30rem;
+    width: 100%;
+    height: auto;
    
 }
 
