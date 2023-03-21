@@ -52,6 +52,7 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+
 .navbar {
     padding: 1.5rem;
     display: flex;
@@ -138,7 +139,8 @@ section {
 }
 
 .desktopHero {
-    width: 100%;
+    
+    width: 80%;
     height: auto;
    
 }
