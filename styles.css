@@ -54,6 +54,7 @@ body {
 
 
 .navbar {
+   
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -64,7 +65,8 @@ body {
     min-width: 35.5rem;
 }
 .navRight {
-    /* min-width: 3rem; */
+    width: 300px;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -235,20 +237,28 @@ section {
     display: none;
 }
 @media only screen and (max-width: 830px) {
-
+    #main-text {
+        font-size: 3rem;
+        text-align: center;
+    }
     .innerRightCont {
         order: -1;
     }
     .innerLeftCont {
-        justify-content: center;
+       justify-content: center;
     }
     section{
         flex-direction: column;
         justify-content: center;
        
     }
+    .aboutTextCont {
+        margin: 1rem;
+        width: 15rem;
+        text-align: center;
+    }
     .testimonialCont {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         min-width: 20rem;
     }
 
@@ -262,7 +272,7 @@ section {
     .loginBtn, .registerBtn {
         display: none;
     }
-    .navbar { padding: 1rem; }
+    .navbar { padding: 1rem;  }
 
     .nav-logo {
         width: 130px;;
@@ -270,7 +280,12 @@ section {
     .hamburgerMenu:hover {
         cursor: pointer;
     }
-    /* .navRight {
-        max-width: 100px;
-    } */
+    .navLeft {
+        max-width: 400px;
+        min-width: 50px;
+    }
+    .navRight {
+        width: 50px;
+    }
+    
 }
