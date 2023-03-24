@@ -236,6 +236,8 @@ section {
 .hamburgerMenu {
     display: none;
 }
+
+
 @media only screen and (max-width: 830px) {
     #main-text {
         font-size: 3rem;
@@ -288,4 +290,14 @@ section {
         width: 50px;
     }
     
+    .mobileNav {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: var(--almostWhite);
+        box-shadow: 0 0 10px 20px rgba(0,0,0,.2);
+    }
 }
