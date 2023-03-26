@@ -240,32 +240,8 @@ section {
 .closeNavX:hover  {
     cursor: pointer;
 }
-   .mobileNav {
-    background-color: rgba(18, 17, 17, 0.7); 
-    position: fixed;
-    z-index: 1; 
-    left: 0;
-    top: 0; 
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    transition: ease-in .3s;
-    display: none;
-}
-.mobileNavContent {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--almostWhite);
-    /* display: none; */
-}
-.imgDiv {
-    padding: 1.5rem;
-    text-align: right;
-}
+
+
 @media only screen and (max-width: 830px) {
     #main-text {
         font-size: 3rem;
@@ -296,9 +272,7 @@ section {
         display: none;
 
     }
-    .hamburgerMenu {
-        display: block;
-    }
+    
     .loginBtn, .registerBtn {
         display: none;
     }
@@ -307,8 +281,11 @@ section {
     .nav-logo {
         width: 130px;;
     }
-    .hamburgerMenu:hover {
+    /* .hamburgerMenu:hover {
         cursor: pointer;
+    } */
+    .hamburgerMenu {
+        display: block;
     }
     .navLeft {
         max-width: 400px;
@@ -317,5 +294,36 @@ section {
     .navRight {
         width: 50px;
     }
+    
+
+}
+
+
+.mobileNav {
+    background-color: rgba(18, 17, 17, 0.7); 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    transition: ease-in .3s;
+    display: none;
+}
+.mobileNavContent {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--almostWhite);
+    /* display: none; */
+}
+.imgDiv {
+   
+    padding: 1.5rem;
+    text-align: right;
 
 }

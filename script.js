@@ -32,8 +32,10 @@ const getArrowDownImg2 = () => {
 
 const displayNavMobile = () => {
     const hamburgerMenu = document.getElementById('hamburgerIcon');
+    hamburgerMenu.style.cursor = 'pointer';
     const nav = document.getElementById('mobileNav');
     const closeMenu = document.querySelector('.closeNavX');
+
     hamburgerMenu.addEventListener('click', () => {
         hamburgerMenu.style.display = 'none';
         nav.style.display = 'block';
@@ -49,5 +51,25 @@ const displayNavMobile = () => {
             hamburgerMenu.style.display = 'block';
         }
     }
+    let media = window.matchMedia('(max-width: 830px)');
+    if (media.matches) {
+        hamburgerMenu.style.display = 'block';
+    } else {
+        hamburgerMenu.style.display = 'none';
+    }
+    console.log(media);
 }
+
+// let el = window.matchMedia('(max-width: 830px)');
+// const hamburgerMedia = (el) => {
+//     if (el.matches) {
+//         document.getElementById('hamburgerIcon').style.display = 'none'; 
+//     } else {
+//         document.getElementById('hamburgerIcon').style.display = 'block';
+//     }
+// }
+
+// hamburgerMedia(el);
+// el.addEventListener('change', hamburgerMedia)
+// setInterval(displayNavMobile, 1000)
 displayNavMobile()
