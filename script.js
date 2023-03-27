@@ -57,7 +57,6 @@ const displayNavMobile = () => {
     } else {
         hamburgerMenu.style.display = 'none';
     }
-    console.log(media);
 }
 
 // let el = window.matchMedia('(max-width: 830px)');
