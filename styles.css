@@ -251,7 +251,8 @@ section {
         order: -1;
     }
     .innerLeftCont {
-       justify-content: center;
+       /* justify-content: center; */
+       align-items: center;
     }
     section{
         flex-direction: column;
