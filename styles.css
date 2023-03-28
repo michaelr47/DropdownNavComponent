@@ -249,11 +249,9 @@ section {
     }
     .innerRightCont {
         order: -1;
+        text-align: center;
     }
-    .innerLeftCont {
-       /* justify-content: center; */
-       align-items: center;
-    }
+    .innerLeftCont { align-items: center; }
     section{
         flex-direction: column;
         justify-content: center;
@@ -267,38 +265,25 @@ section {
     .testimonialCont {
         flex-wrap: nowrap;
         min-width: 20rem;
+        
     }
+    .testimonials { margin: .275rem; }
 
-    .nav-item{ 
-        display: none;
-
-    }
+    .nav-item { display: none; }
     
-    .loginBtn, .registerBtn {
-        display: none;
-    }
+    .loginBtn, .registerBtn { display: none; }
     .navbar { padding: 1rem;  }
 
-    .nav-logo {
-        width: 130px;;
-    }
-    /* .hamburgerMenu:hover {
-        cursor: pointer;
-    } */
-    .hamburgerMenu {
-        display: block;
-    }
+    .nav-logo { width: 130px;; }
+    .hamburgerMenu { display: block; }
     .navLeft {
         max-width: 400px;
         min-width: 50px;
     }
-    .navRight {
-        width: 50px;
-    }
+    .navRight { width: 50px; }
     
 
 }
-
 
 .mobileNav {
     background-color: rgba(18, 17, 17, 0.7); 
