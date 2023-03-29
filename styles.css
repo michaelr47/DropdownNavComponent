@@ -264,7 +264,7 @@ section {
     }
     .testimonialCont {
         flex-wrap: nowrap;
-        min-width: 20rem;
+        /* min-width: 20rem; */
         
     }
     .testimonials { margin: .275rem; }
@@ -290,6 +290,7 @@ section {
     }
     
     .desktopHero { width: 100%; }
+
     section.container {
         padding: 1rem;
     }
@@ -299,6 +300,10 @@ section {
     #br {
         display: none;
     }
+    .testimonials {
+        width: 75px;
+    }
+
 }
 
 .mobileNav {
