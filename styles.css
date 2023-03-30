@@ -40,12 +40,6 @@ The designs were created to the following widths:
     box-sizing: border-box;
 }
 
-html {
-    /* min-width: 375px; */
-    min-height: 100dvh;
-    width: 100%;  
-    background-color: red; 
-}
 body {
     min-height: 100vh;
     background-color: var(--almostWhite);

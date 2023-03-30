@@ -71,4 +71,4 @@ const displayNavMobile = () => {
 // hamburgerMedia(el);
 // el.addEventListener('change', hamburgerMedia)
 // setInterval(displayNavMobile, 1000)
-setInterval(displayNavMobile, 1000);
+setInterval(displayNavMobile, 100);
