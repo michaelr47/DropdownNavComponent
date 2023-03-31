@@ -311,7 +311,7 @@ section {
     height: 100%; 
     overflow: auto;
     transition: ease-in .3s;
-    display: none;
+    /* display: none; */
 }
 .mobileNavContent {
     position: fixed;
@@ -321,11 +321,25 @@ section {
     width: 50%;
     height: 100%;
     background-color: var(--almostWhite);
+    
     /* display: none; */
+}
+.ulCont {
+   
+    padding: 2rem;
+    font-size: 1.10rem;
+}
+.ulMobileNav {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
 }
 .imgDiv {
    
     padding: 1.5rem;
+    margin-right: 10px;
     text-align: right;
 
 }
