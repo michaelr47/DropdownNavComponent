@@ -311,7 +311,7 @@ section {
     height: 100%; 
     overflow: auto;
     transition: ease-in .3s;
-    /* display: none; */
+    display: none;
 }
 .mobileNavContent {
     position: fixed;
