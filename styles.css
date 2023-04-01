@@ -343,3 +343,25 @@ section {
     text-align: right;
 
 }
+
+.loginRegisterNav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.registerBtnMob {
+    font-size: 1rem;
+    width: 12rem;
+    padding: 9px;
+    color: var(--gray);
+    border-radius: 14px;
+    border: 2px solid var(--gray);
+    background-color: var(--almostWhite);
+}
+.registerBtnMob:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
