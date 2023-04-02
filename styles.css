@@ -365,3 +365,12 @@ section {
     color: var(--black);
     cursor: pointer;
 }
+
+.dropdownFeatMob, .dropdownCompMob {
+    list-style-type: none;
+    text-align: center;
+}
+
+.dropdownFeatMob li, .dropdownCompMob li {
+    margin: 10px;
+}
