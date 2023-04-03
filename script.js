@@ -24,10 +24,11 @@ const getArrowDownImg2 = () => {
     arrowDownComp.src = './images/icon-arrow-down.svg';
     dropdownCompany.style.display = 'none';
 }
+const hamburgerMenu = document.getElementById('hamburgerIcon');
 
 const displayNavMobile = () => {
     
-    const hamburgerMenu = document.getElementById('hamburgerIcon');
+   
     hamburgerMenu.style.cursor = 'pointer';
     const nav = document.getElementById('mobileNav');
     const closeMenu = document.querySelector('.closeNavX');
@@ -55,13 +56,39 @@ const displayNavMobile = () => {
         }
     }
     
+    
 }
 
+function changeArrowDirecttion() {
+    const arrowUp = document.querySelectorAll(".arrowUpMob");
+    const arrowDown = document.querySelectorAll('.arrowDownMob');
+    
+    for (const arrows of arrowUp) {
+        arrows.addEventListener(('click'), () => {
+            if (arrows.style.display === 'block') {
+                arrows.style.display = 'none';
+            } else {
+                arrows.style.display = 'inline-block';
+            }
+        
+        })
 
+    }
 
+    for (const arrow of arrowDown) {
+        arrow.addEventListener('click', () => {
+            if (arrow.style.display === 'none') {
+                arrow.style.display = 'block'; 
+            } else {
+                arrow.style.display = 'none';
+            }
+        })
+    }
+}
 
+changeArrowDirecttion()
+// add functions to arrows on click
 
-
-
-
-setInterval(displayNavMobile, 100);
+    //  change to up arrow
+    // display dropdown list
+setInterval(displayNavMobile, 1000);
