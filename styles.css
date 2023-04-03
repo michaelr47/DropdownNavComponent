@@ -377,7 +377,10 @@ section {
 .dropdownFeatMob, .dropdownCompMob {
     list-style-type: none;
     text-align: center;
+    color: var(--gray);
+    display: none;
 }
+
 
 .dropdownFeatMob li, .dropdownCompMob li {
     margin: 10px;
