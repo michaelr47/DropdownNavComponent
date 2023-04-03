@@ -326,15 +326,22 @@ section {
 }
 .ulCont {
    
-    padding: 2rem;
+    padding: 3rem;
     font-size: 1.10rem;
 }
+
+
 .ulMobileNav {
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
+}
+
+.ulMobileNav li {
+    margin: 10px 5px;
+
 }
 .imgDiv {
    
@@ -346,6 +353,7 @@ section {
 
 .loginRegisterNav {
     height: 5rem;
+    margin: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -373,4 +381,5 @@ section {
 
 .dropdownFeatMob li, .dropdownCompMob li {
     margin: 10px;
+    font-size: 1rem;
 }
