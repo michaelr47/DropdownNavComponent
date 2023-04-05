@@ -62,7 +62,9 @@ const displayNavMobile = () => {
 function changeArrowDirecttion() {
     const arrowUp = document.querySelectorAll(".arrowUpMob");
     const arrowDown = document.querySelectorAll('.arrowDownMob');
-    
+    const featMob = document.querySelector('.dropdownFeatMob');
+    const compMob = document.querySelector('.dropdownCompMob');
+   
     for (const arrows of arrowUp) {
         arrows.addEventListener(('click'), () => {
             if (arrows.style.display === 'block') {
