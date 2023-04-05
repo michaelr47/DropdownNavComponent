@@ -64,28 +64,38 @@ function changeArrowDirecttion() {
     const arrowDown = document.querySelectorAll('.arrowDownMob');
     const featMob = document.querySelector('.dropdownFeatMob');
     const compMob = document.querySelector('.dropdownCompMob');
-   
+    const featuresEl = document.getElementById('featuresMobileNav');
+    const companyEl = document.getElementById('companyMobileNav');
+    console.log(featuresEl);
+    console.log(companyEl);
+
+    //company arrows
+    for (const arrow of arrowDown) {
+        companyEl.addEventListener('click', () => {
+            if (arrow.style.display === 'block') {
+                arrow.style.display = 'none'; 
+            } else {
+                arrow.style.display = 'block';
+            }
+        })
+    }
+
+
+
+
+    //features arrows
     for (const arrows of arrowUp) {
-        arrows.addEventListener(('click'), () => {
+        featuresEl.addEventListener(('click'), () => {
             if (arrows.style.display === 'block') {
                 arrows.style.display = 'none';
             } else {
                 arrows.style.display = 'inline-block';
             }
-        
+
         })
 
     }
 
-    for (const arrow of arrowDown) {
-        arrow.addEventListener('click', () => {
-            if (arrow.style.display === 'none') {
-                arrow.style.display = 'block'; 
-            } else {
-                arrow.style.display = 'none';
-            }
-        })
-    }
 }
 
 changeArrowDirecttion()
