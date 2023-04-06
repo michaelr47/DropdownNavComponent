@@ -59,7 +59,7 @@ const displayNavMobile = () => {
     
 }
 
-function changeArrowDirecttion() {
+const changeArrowDirecttion = () => {
     const arrowUp = document.querySelectorAll(".arrowUpMob");
     const arrowDown = document.querySelectorAll('.arrowDownMob');
     const featMob = document.querySelector('.dropdownFeatMob');
@@ -67,7 +67,6 @@ function changeArrowDirecttion() {
     const featuresEl = document.getElementById('featuresMobileNav');
     const companyEl = document.getElementById('companyMobileNav');
 
-    // for (let i = 0; i < arrowUp.length; i++) {
         featuresEl.addEventListener(('click'), () => {
             if (arrowUp[0].style.display === 'none') {
                 arrowUp[0].style.display = 'inline-block';
@@ -83,10 +82,8 @@ function changeArrowDirecttion() {
 
         })
 
-    // }
-
     //company arrows
-    // for (let i = 0; i < arrowDown.length; i++) {
+    
         companyEl.addEventListener('click', () => {
             if (arrowUp[1].style.display === 'none') {
                 arrowUp[1].style.display = 'inline-block'; 
@@ -99,18 +96,8 @@ function changeArrowDirecttion() {
 
             }
         })
-    // }
-
-
-
-
-  
-
+    
 }
 
 changeArrowDirecttion()
-// add functions to arrows on click
-
-    //  change to up arrow
-    // display dropdown list
 setInterval(displayNavMobile, 1000);
