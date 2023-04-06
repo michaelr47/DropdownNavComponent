@@ -386,3 +386,10 @@ section {
     margin: 10px;
     font-size: 1rem;
 }
+
+.arrowUpMob {
+    display: none;
+}
+/* .arrowDownMob {
+    display: inline-block;
+} */

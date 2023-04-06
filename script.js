@@ -66,35 +66,45 @@ function changeArrowDirecttion() {
     const compMob = document.querySelector('.dropdownCompMob');
     const featuresEl = document.getElementById('featuresMobileNav');
     const companyEl = document.getElementById('companyMobileNav');
-    console.log(featuresEl);
-    console.log(companyEl);
+
+    // for (let i = 0; i < arrowUp.length; i++) {
+        featuresEl.addEventListener(('click'), () => {
+            if (arrowUp[0].style.display === 'none') {
+                arrowUp[0].style.display = 'inline-block';
+                featMob.style.display = 'block'
+                arrowDown[0].style.display = 'none'
+            } 
+            else {
+                arrowUp[0].style.display = 'none';
+                arrowDown[0].style.display = 'inline-block'
+                featMob.style.display = 'none'
+
+            }
+
+        })
+
+    // }
 
     //company arrows
-    for (const arrow of arrowDown) {
+    // for (let i = 0; i < arrowDown.length; i++) {
         companyEl.addEventListener('click', () => {
-            if (arrow.style.display === 'block') {
-                arrow.style.display = 'none'; 
+            if (arrowUp[1].style.display === 'none') {
+                arrowUp[1].style.display = 'inline-block'; 
+                compMob.style.display = 'block';
+                arrowDown[1].style.display = 'none'; 
             } else {
-                arrow.style.display = 'block';
+                arrowUp[1].style.display = 'none';
+                arrowDown[1].style.display = 'inline-block';
+                compMob.style.display = 'none';
+
             }
         })
-    }
+    // }
 
 
 
 
-    //features arrows
-    for (const arrows of arrowUp) {
-        featuresEl.addEventListener(('click'), () => {
-            if (arrows.style.display === 'block') {
-                arrows.style.display = 'none';
-            } else {
-                arrows.style.display = 'inline-block';
-            }
-
-        })
-
-    }
+  
 
 }
 
