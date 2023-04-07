@@ -8,8 +8,18 @@ const arrowDownComp = document.querySelector('#company .arrowDown');
 const getArrowUpImg1 = () => {
     arrowDownFeat.src = './images/icon-arrow-up.svg';
     dropdownFeatures.style.display = 'block'
-}
 
+      window.addEventListener('click', (e) => {
+        if (e.target == window) {
+            console.log('clicked window');
+            dropdownFeatures.style.display = 'none';
+            // nav.style.display = 'none';
+            // hamburgerMenu.style.display = 'block';
+        }
+    })
+
+}
+ 
 const getArrowUpImg2 = () => {
     arrowDownComp.src = './images/icon-arrow-up.svg';
     dropdownCompany.style.display = 'block';
