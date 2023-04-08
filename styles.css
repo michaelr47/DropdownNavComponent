@@ -1,31 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Neutral
-
-- Almost White: hsl(0, 0%, 98%)
-- Medium Gray: hsl(0, 0%, 41%)
-- Almost Black: hsl(0, 0%, 8%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-- Weights: 500, 700 */
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -48,16 +20,13 @@ body {
 
 
 .navbar {
-   
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navLeft {
-    min-width: 35.5rem;
-}
+.navLeft { min-width: 35.5rem; }
 .navRight {
     width: 300px;
     padding: 1rem;
@@ -76,30 +45,15 @@ body {
     color: var(--gray);
 }
 
-.nav-item {
-    margin-left: 2rem;
+.nav-item { margin-left: 2rem; }
 
-}
+.loginBtn { color: var(--gray); }
+.loginBtn:hover { color: var(--black); }
 
-.loginBtn {
-    color: var(--gray);
-}
-.loginBtn:hover {
-    color: var(--black);
-}
-
-a {
-    text-decoration: none;
-}
-a:link {
-    color: var(--gray);
-}
-a:visited {
-    color: var(--gray);
-}
-a:hover {
- color: var(--black);   
-}
+a { text-decoration: none; }
+a:link { color: var(--gray);}
+a:visited { color: var(--gray);}
+a:hover { color: var(--black); }
 
 .registerBtn {
     font-size: 1rem;
@@ -130,15 +84,11 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.innerRightCont {
-    padding: 1.5rem;
-}
+.innerRightCont { padding: 1.5rem; }
 
 .desktopHero {
-    
     width: 80%;
     height: auto;
-   
 }
 
 #main-text {
@@ -174,8 +124,7 @@ section {
 }
 .flex-align {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .dropdownFeatures {
@@ -200,9 +149,7 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.ul-features li {
-    padding: .5rem;
-}
+.ul-features li { padding: .5rem; }
 .ul-company li {
     padding: 8px 0px;
     margin-left: 5px;
@@ -223,17 +170,9 @@ section {
     display: none;
 }
 
-.dropdownIcon {
-    margin-right: 5px;
-}
-
-.hamburgerMenu {
-    display: none;
-}
-
-.closeNavX:hover  {
-    cursor: pointer;
-}
+.dropdownIcon { margin-right: 5px; }
+.hamburgerMenu { display: none; }
+.closeNavX:hover  { cursor: pointer; }
 
 
 @media only screen and (max-width: 830px) {
@@ -256,11 +195,7 @@ section {
         width: 15rem;
         text-align: center;
     }
-    .testimonialCont {
-        flex-wrap: nowrap;
-        /* min-width: 20rem; */
-        
-    }
+    .testimonialCont { flex-wrap: nowrap;}
     .testimonials { margin: .275rem; }
 
     .nav-item { display: none; }
@@ -286,18 +221,10 @@ section {
     
     .desktopHero { width: 100%; }
 
-    section.container {
-        padding: 1rem;
-    }
-    #main-text {
-        font-size: 2.4rem;
-    }
-    #br {
-        display: none;
-    }
-    .testimonials {
-        width: 75px;
-    }
+    section.container { padding: 1rem; }
+    #main-text { font-size: 2.4rem;  }
+    #br { display: none; }
+    .testimonials { width: 75px; }
     .nav-logo { width: 100px; }
 }
 
@@ -321,15 +248,12 @@ section {
     width: 50%;
     height: 100%;
     background-color: var(--almostWhite);
-    
-    /* display: none; */
+    animation: smoothNav .5s ease-in;
 }
 .ulCont {
-   
     padding: 3rem;
     font-size: 1.10rem;
 }
-
 
 .ulMobileNav {
     height: 250px;
@@ -339,16 +263,12 @@ section {
     list-style-type: none;
 }
 
-.ulMobileNav li {
-    margin: 10px 5px;
+.ulMobileNav li { margin: 10px 5px; }
 
-}
-.imgDiv {
-   
+.imgDiv { 
     padding: 1.5rem;
     margin-right: 10px;
     text-align: right;
-
 }
 
 .loginRegisterNav {
@@ -381,15 +301,18 @@ section {
     display: none;
 }
 
-
 .dropdownFeatMob li, .dropdownCompMob li {
     margin: 10px;
     font-size: 1rem;
 }
 
-.arrowUpMob {
-    display: none;
+.arrowUpMob { display: none; }
+
+@keyframes smoothNav {
+    0% {
+        transform: translateX(435px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
-/* .arrowDownMob {
-    display: inline-block;
-} */
